@@ -31,7 +31,7 @@ int _printf(const char *format, ...)
 			if (*p == '%')
 			{
 				count += _putchar('%');
-				countinue;
+				continue;
 			}
 			while (get_flag(*p, &flags))
 				p++;
